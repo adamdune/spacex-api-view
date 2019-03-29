@@ -1,0 +1,10 @@
+@import "header_footer";
+@import "./bootstrap_scss/functions";
+@import "bootswatch_variables";
+@import "variables";
+@import "bootswatch";
+@import "./bootstrap_scss/bootstrap.scss";
+
+.rounded{
+  border-radius: 0.30rem !important;
+}

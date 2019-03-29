@@ -1,0 +1,25 @@
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+#App{
+  $footer-height: 35px;
+
+  #Nav{
+      z-index: 2;
+  }
+
+  #Body{
+      padding-bottom: $footer-height !important;
+  }
+
+  #Footer{
+      z-index: 2;
+      position:absolute;
+      bottom:0;
+      height: $footer-height;
+      line-height: $footer-height;
+      width: 100%;
+  }
+}
