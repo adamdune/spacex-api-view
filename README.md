@@ -12,3 +12,4 @@ $ npm run dev
 Launch in production mode.
 ```sh
 $ NODE_ENV=production npm start
+```
