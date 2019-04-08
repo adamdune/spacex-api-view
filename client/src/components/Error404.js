@@ -5,7 +5,7 @@ class Error404 extends Component {
   render() {
     return (
       <div className="text-center mt-5">
-        <div className="h2">ERROR 404 | NOT FOUND</div>
+        <div className="h2"><strong>ERROR 404</strong> | NOT FOUND</div>
         <br />
         <h6>The page you requested does not exist.</h6>
       </div>

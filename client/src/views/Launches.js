@@ -40,7 +40,8 @@ class Launches extends Component {
         if (loading) return <Loading />
         if (error) return <Error />
 
-        return (
+        if (data.launches) {
+          return(
           <Fragment>
             <LaunchesPerYear
               launches={data.launches}
@@ -57,7 +58,7 @@ class Launches extends Component {
             }
             <DateDisclaimer />
           </Fragment>
-        )
+        )} else return <Error />
       }}
     </Query>
      );

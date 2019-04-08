@@ -143,7 +143,7 @@ class Roadster extends Component {
                                 <DateDisclaimer/>
                             </Fragment>
                         )
-                    }
+                    } else return <Error/>
                 }}
             </Query>
         );

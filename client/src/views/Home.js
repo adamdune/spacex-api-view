@@ -53,6 +53,7 @@ const Home = () => {
         if (loading) return <Loading />
         if (error) return <Error />
 
+        if (data.info){
         return (
           <Fragment>
             <div className="jumbotron bg-dark text-white text-center">
@@ -84,6 +85,7 @@ const Home = () => {
             <DateDislacimer />
           </Fragment>
         )
+      } else return <Error/>
       }}
     </Query>
   );

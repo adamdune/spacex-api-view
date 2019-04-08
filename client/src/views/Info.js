@@ -94,7 +94,7 @@ class Info extends Component {
                                 </div>
                             </Fragment>
                         )
-                    }
+                    } else return <Error/>
                 }}
             </Query>
         );

@@ -15,8 +15,8 @@ const LaunchItem = ({ launch: { flight_number, mission_name, launch_date_utc, la
                 </Link>
                 <h6><i className="far fa-clock mr-2"></i>{moment(launch_date_utc).format('Do MMMM YYYY')}</h6>
                 <p><i className="fas fa-rocket mr-2"></i>Rocket Name: <strong><Link to={`rockets/${rocket_id}`}>{rocket_name}</Link></strong></p>
-                <Link to={`/launches/${flight_number}`} className="btn btn-primary mr-2">Details</Link>
-                {article_link ? <a href={article_link} className="btn btn-info mr-2">Read Article</a> : null}
+                <Link to={`/launches/${flight_number}`} className="btn btn-primary mr-2 my-2">Details</Link>
+                {article_link ? <a href={article_link} className="btn btn-info mr-2 my-2">Read Article</a> : null}
             </div>
         </div>
     );

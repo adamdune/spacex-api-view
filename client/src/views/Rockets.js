@@ -32,7 +32,8 @@ class Rockets extends Component {
                 if (loading) return <Loading />
                 if (error) return <Error />
 
-                return (
+                if (data.rockets) {
+                    return (
                     <Fragment>
                         <div className="display-4 mb-3">All Rockets</div>
                         <RocketLegends />
@@ -42,7 +43,7 @@ class Rockets extends Component {
                             )}
                         <DateDisclaimer />
                     </Fragment>
-                )
+                )} else return <Error/>
             }}
         </Query>);
     }
