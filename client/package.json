@@ -7,7 +7,7 @@
     "chart.js": "^2.9.4",
     "graphql": "^14.7.0",
     "moment": "^2.29.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "react": "^16.14.0",
     "react-apollo": "^2.5.8",
     "react-dom": "^16.14.0",
